@@ -16,7 +16,7 @@ RUN echo "Adding gopher user and group" \
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y lib32z1 lib32stdc++6
 # For Go:
-RUN apt-get -y --no-install-recommends install curl gcc
+RUN apt-get -y --no-install-recommends install curl gcc pkg-config
 RUN apt-get -y --no-install-recommends install ca-certificates libc6-dev git
 
 USER gopher
